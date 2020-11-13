@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Main Header Display-->
@@ -24,7 +25,7 @@
     <section id="skills">
         <div class="skills container">
             <div class="skills-top">
-                <h1 class="skills-header">TECHN<span>I</span>CAL SK<span>I</span>LLS</h1>
+                <h1 class="section-title">TECHN<span>I</span>CAL SK<span>I</span>LLS</h1>
                 <p>My diverse background in Computer Science, client driven services, and military experience provide me with the skillset to execute transformational ideas and ultimately create and deliver robust software products. I love learning new skills, and I am constantly looking for ways to grow my skills. </p>
             </div>
             <div class="skills-bottom">
@@ -36,9 +37,9 @@
                     <div class="programming-languages">
                         <p>Python</p>
                         <p>Java</p>
-                        <p>Javascript (ES6)</p>
-                        <p>CSS3</p>
-                        <p>HTML5</p>
+                        <p>Javascript (ES6+)</p>
+                        <p>CSS</p>
+                        <p>HTML</p>
                     </div>
                 </div>
                 <div class="skills-item">
@@ -82,5 +83,146 @@
         </div>
     </section>
     <!-- End Technical Skills Section-->
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">Recent <span>Projects</span></h1>
+            </div>
+            <div class="all-projects">
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-subheader">
+                            <h1>Project 1</h1>
+                            <div class=links>
+                                <div class="external-link">
+                                    <a href="https://shaun-ho-chiahui-lin-a2-webdev.herokuapp.com/" target="_blank"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                                <a href="https://github.com/shaunhoshenteck/shaun-ho-Conway-s-Game-of-Life" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <h2>Conway's Game of Life</h2>
+                        <h3>React CSS HTML Javascript</h3>
+                        <p>A modified version of Conway's Game of Life which is a simulation of a system where individual cells “live” and “die” in a state of relative equilibrium. After an in-game moment passes, the state of the game changes based on the previous state of the world. Users will be given the opportunity to modify some of the aspects of the game before starting the simulation. 
+                            I wrote this based on a 2D grid system, where every individual location on the grid is refered to as a cell. I used React and React Hooks to build this web application with emphasis on state management and proper react principles such as 
+                            making sure react components are small, reusable, and have a single purpose. Logic for determining whether cells become alive or dead was based on a brute force algorithm that checks 
+                            all eight directions of a current cell. I also improved user experience by giving the user the ability to select the size of the board, speed of each iteration, start and stop the simulation, and manually revive or kill a cell.
+                            Finally, I also created a heatmap option which indicates how recently a cell was alive.  
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./project-images/Game of Life.png" alt="Conway's Game of Life" />
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-subheader">
+                            <h1>Project 2</h1>
+                            <div class=links>
+                                <!-- <div class="external-link">
+                                    <i class="fa fa-external-link fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <i class="fa fa-github-square fa-2x" aria-hidden="true"></i> -->
+                            </div>
+                        </div>
+                        <h2>Hungry Hippos Full Stack Food Delivery App (In Progress)</h2>
+                        <h3>React CSS HTML Javascript Java MongoDB</h3>
+                        <p>A fully functional food delivery application created with full stack technologies and MVC architecture. This app integrates Java with the MongoDB database.
+                            My teammates decided to use Spark Java web framework to effectively develop the web application. We incorporated agile workflow among team members to conduct code reviews
+                            and set sprint goals. During the backend development part of this project, I had to learn new libraries, frameworks, and industry trends such as 
+                            Dagger2, Lombok, and API contract design to support the implementation of MVC architecture.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./project-images/application.jpg" alt="Food Delivery Application" />
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-subheader">
+                            <h1>Project 3</h1>
+                            <div class=links>
+                                <div class="external-link">
+                                    <a href="https://ravenous-yelp-clone.herokuapp.com/" target="_blank"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                                <a href="https://github.com/shaunhoshenteck/Yelp-Clone" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <h2>Ravenous Yelp Clone</h2>
+                        <h3>React CSS HTML Javascript</h3>
+                        <p>This is a simple Yelp clone built with React. I wanted to learn more about React components and how to handle changes in their state and also how to properly
+                            pass information from component to component. I was also interested in learning about APIs and learned how to make my app interact with the Yelp API.
+                            The app allows users to search the Yelp API for restaurants that match a search option.
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./project-images/ravenous.png" alt="Ravenous Yelp Clone" />
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-subheader">
+                            <h1>Project 4</h1>
+                            <div class=links>
+                                <div class="external-link">
+                                    <a href="https://shaunhoshenteck.github.io/Personal-Website/index.html"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                               <a href="https://github.com/shaunhoshenteck/Personal-Website"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <h2>Personal Website V1</h2>
+                        <h3>CSS HTML</h3>
+                        <p>This is the first version of my portfolio website, built when I was first introduced to CSS and HTML. Since building this project, I believe my design skills and front-end knowledge has improved 
+                            tremendously. When I was creating this project, I wanted to experiment as much as possible, and I was able to learn a lot in terms of 
+                            tips and tricks with animations, transitions, and positioning.
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./project-images/Website V1.png" alt="Website V1" />
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-subheader">
+                            <h1>Project 5</h1>
+                            <div class=links>
+                                <a href="https://github.com/shaunhoshenteck/To-Do-List-Task-Management-Application/blob/master/README.md"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <h2>To-Do List Task Management Application</h2>
+                        <h3>Java</h3>
+                        <p>This is a fully functional command line task management application in Java designed with the MVC architecture. This simple application allows
+                            users to create and organize their to-do lists from the command line. The to-do list consists of to-do objects that were created with the Builder pattern. I implemented
+                            a command-line parser to determine what the client wants, which allows flexibility in how the to-do list is generated.
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./project-images/to-do list.jpg" alt="To-do List" />
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-subheader">
+                            <h1>Project 6</h1>
+                            <div class=links>
+                                <a href="https://github.com/shaunhoshenteck/Othello-Board-Game"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <h2>Othello Board Game</h2>
+                        <h3>Python Processing</h3>
+                        <p>This is a Reversi board game designed and implemented with Python on Processing, a flexible software sketchbook. I designed and implented classes
+                            that launched the setup of the 2D board, determined whose turn it would be, and flipped the disk colors when a valid move was made. I also
+                            designed a simple AI opponent that executed a DFS algorithm to find all possible moves during the current turn. I improved user experience by
+                            creating a leaderboard, letting the user know which tiles were flipped, and announcing the winner after every game. This was my first project on Python.
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./project-images/Othello.png" alt="Othello Board Game" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Projects Section-->
 </body>
 </html>
