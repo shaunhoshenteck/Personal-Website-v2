@@ -51,6 +51,16 @@ p {
     color: crimson;
 }
 
+.brand h1 {
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.brand h1 span {
+    color: crimson;
+}
+
 .fa-external-link {
     margin-top: 3px;
     margin-right: 3px;
@@ -58,6 +68,9 @@ p {
 
 .links {
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 a {
@@ -200,7 +213,7 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     flex-basis: 80%;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 30px;
     border-radius: 20px;
     margin: 10px 5%;
@@ -401,6 +414,7 @@ a:hover {
     display: flex;
     justify-content: flex-end;
     margin: 30px auto;
+    flex-direction: row;
 }
 
 .about-links a{
@@ -456,7 +470,60 @@ a:hover {
     font-weight: 500;
     margin-bottom: 10px;
 }
+
+#contact .section-title {
+    margin-bottom: 15px;
+}
 /* End of Contact Section */
+
+/* Footer Section */
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#footer h2 {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 5px;
+    letter-spacing: 0.05rem;
+    margin-bottom: 10px;
+}
+
+#footer .social-icons{
+    display: flex;
+    margin-top: 20px;
+}
+
+#footer .social-icon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer .social-icon a {
+    color: black;
+    transition: 0.3s ease color;
+    height: 60%;
+    cursor: pointer
+}
+
+#footer .social-icon a:hover {
+    color: white;
+}
+
+#footer p {
+    color: white;
+    font-size: 1.3rem;
+}
+/* End of Footer Section */
 
 /* Keyframes */
 @keyframes text_reveal_box {
@@ -482,3 +549,116 @@ a:hover {
         font-weight: 700;
     }
 }
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 768px) {
+    .portfolio-button {
+        font-size: 2.5rem;
+        padding: 20px 40px;
+    }
+
+    h1.section-title {
+        font-size: 6rem;
+    }
+
+    /* Main Header Section */
+    #main-header h1 {
+        font-size: 7rem;
+    }
+    /* End of Main Header Section */
+
+    /* Service Section */
+    #skills .skills-bottom .skills-item {
+        flex-basis: 45%;
+        margin: 2.5%;
+        height: 370px;
+    }
+    /* End of Service Section */
+
+    /* About Me Section */
+    #about .about {
+        flex-direction: row;
+    }
+
+    #about .about-left {
+        width: 600px;
+        height: 450px;
+        padding: 50px;
+    }
+
+    #about .about-right {
+        text-align: left;
+        padding: 30px;
+    }
+
+    #about .about-right h1{
+        text-align: left;
+    }
+    
+    /* End of About Me Section */
+
+    /* Contact Section */
+    /* #contact .contact {
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+    }
+
+    #contact .contact-items {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        padding: 20px;
+        margin: 0;
+    }
+
+    #contact .contact-item {
+        margin: 10px auto;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    #contact .contact-item .logo {
+
+    } */
+
+    #contact .contact {
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+    }
+    
+	#contact .contact-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+    }
+
+	#contact .contact-item {
+		width: 30%;
+		margin: 0;
+    }
+    
+	#contact .contact-item .logo {
+		height: 180px;
+		width: 100px;
+	}
+	#contact .contact-item .logo img {
+		object-fit: contain;
+	}
+	#contact .contact-item .contact-info {
+		width: 100%;
+		text-align: center;
+	}
+
+    /* End of Contact Section */
+
+}
+/* End of Media Query for Tablet */
