@@ -22,6 +22,21 @@ a {
     justify-content: center;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    color: black;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-top: 5px;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+}
+
 /* Main Header Section */
 #main-header {
     background-image: url('./keyboard-2.jpg');
@@ -69,6 +84,7 @@ a {
 }
 
 #main-header h1:nth-child(3) {
+    animation: text_reveal_name 0.5s ease forwards;
     animation-delay: 3s;
 }
 
@@ -124,6 +140,90 @@ a {
 
 /* End of Main Header Section */
 
+/* Technical Skills Section */
+#skills .skills {
+    flex-direction: column;
+    max-width: 1500px;
+    padding: 100px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#skills .skills-top {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#skills .skills-header{
+    font-size:4rem;
+    letter-spacing: 1rem;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#skills .skills-header span {
+    color: crimson;
+}
+
+#skills .skills-bottom {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#skills .skills-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 80%;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 10px 5%;
+    background: url('./technical-knowledge.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#skills .skills-item::after{
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: .8;
+    z-index: -1;
+}
+
+#skills .skills-bottom .icon {
+	height: 80px;
+	width: 80px;
+    margin-bottom: 20px;
+}
+
+#skills .skills-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+#skills .skills-item p {
+    color: white;
+    text-align: left;
+}
+
+/* End of Technical Skills Section */
+
 /* Keyframes */
 @keyframes text_reveal_box {
     50% {
@@ -139,5 +239,12 @@ a {
 @keyframes text_reveal {
     100% {
         color: white;
+    }
+}
+
+@keyframes text_reveal_name {
+    100% {
+        color: crimson;
+        font-weight: 700;
     }
 }
