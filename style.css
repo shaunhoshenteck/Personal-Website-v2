@@ -332,7 +332,7 @@ a:hover {
 #skills .skills {
     flex-direction: column;
     max-width: 1500px;
-    padding: 100px 0;
+    padding: 100px 0; 
     text-align: center;
     margin: 0 auto;
 }
@@ -402,7 +402,7 @@ a:hover {
 /* Projects Section */
 #projects .projects{
     flex-direction: column;
-    padding: 100px;
+    padding: 15px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -420,7 +420,7 @@ a:hover {
 
 #projects .project-subheader {
     display: flex;
-    width: 95%;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -787,6 +787,10 @@ a:hover {
 
 /* Media Query for Desktop */
 @media only screen and (min-width: 1200px) {
+    #projects .projects {
+        padding: 100px;
+    }
+
     #navbar .hamburger {
         display: none;
     }
